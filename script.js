@@ -27,6 +27,7 @@ async function myFetch() {
 
         moreBtn.addEventListener('click', (e) => {
             postList.innerHTML = null
+            commentList.innerHTML = null
             async function myFetch() {
                 const response = await fetch(`https://jsonplaceholder.typicode.com/posts/`);
                 let date2 = await response.json()
