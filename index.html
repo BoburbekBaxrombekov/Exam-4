@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam-project for Month-4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="row">
+        <ul id="listUsers" class="col-4"></ul>
+        <ul id="listPosts" class="col-4"></ul>
+        <ul id="listComments" class="col-4"></ul>
+    </div>
+    <template id="temUser">
+        <li id="userBlock">
+            <h2 id="name">Name</h2>
+            <i id="user__name">UserName</i>
+            <p id="phone__number">phoneNumber</p>
+            <a id="web__site">Website.com</a>
+            <br><button id="more">Posts</button>
+        </li>
+    </template>
+    <template id="temPost">
+        <li id="postBlock">
+            <h4 id="postHeader">Title</h4>
+            <p id="postBody">Body</p>
+            <br><button id="comments">Comments</button>
+        </li>
+    </template>
+    <template id="temComment">
+        <li id="postComment">
+            <h5 id="commentName">Comment Name</h5>
+            <p id="commentBody">Comment Body</p>
+            <a id="CommentLink">Comment Email</a>
+        </li>
+    </template>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
